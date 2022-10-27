@@ -63,7 +63,7 @@ export default function Home() {
 
 
   useEffect(() => {
-    connectWalletProvider();
+    
     if (window.ethereum) {
       // Listeners
       window.ethereum.on("chainChanged", () => {
@@ -80,7 +80,11 @@ export default function Home() {
 
   return (
     <div className="">
-      Beginning
+      <div className='min-h-screen grid place-items-center'>
+        <button className='btn btn-success' onClick={async ()=>connectWalletProvider}>
+          Connect to MetaMask
+        </button>
+      </div>
     </div>
   )
 }

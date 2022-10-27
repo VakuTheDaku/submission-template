@@ -1,6 +1,11 @@
 import { AiFillCheckCircle } from 'react-icons/ai';
+import React from 'react';
+import { useEffect } from 'react';
+import { ethers } from "ethers";
 
 export default function Home() {
+
+
     return (
         <div className='flex flex-col items-center'>
 

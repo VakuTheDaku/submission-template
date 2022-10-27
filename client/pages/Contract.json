@@ -1,0 +1,158 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_user",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_knownAllergies",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_symptoms",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_diagonosis",
+				"type": "string"
+			}
+		],
+		"name": "createRecord",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_id",
+				"type": "uint256"
+			}
+		],
+		"name": "deleteRecord",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "user",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "knownAllergies",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "symptoms",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "diagonosis",
+				"type": "string"
+			}
+		],
+		"name": "RecordCreated",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			}
+		],
+		"name": "RecordDeleted",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "getRecordCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "recordCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "records",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "user",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "knownAllergies",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "symptoms",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "diagonosis",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

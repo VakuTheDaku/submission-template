@@ -11,7 +11,7 @@ export default function Home() {
   // smart contract 
 
   const contractABI = require("./Contract.json");
-  const YOUR_CONTRACT_ADDRESS = "0xef9e38A19F81f499c7A63DA73Ce4a1C4b7b3Dfea";
+  const YOUR_CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS;
 
   const connectWalletProvider = async () => {
     try {

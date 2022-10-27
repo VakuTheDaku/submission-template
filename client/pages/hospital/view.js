@@ -1,9 +1,18 @@
 import { useState } from "react";
 import Navbar from "../../components/navbar";
+import { useEffect } from 'react';
+import { ethers } from 'ethers';
 
 export default function View({ }) {
     const [state, setState] = useState()
     const [records, setRecords] = useState()
+    if (typeof window !== 'undefined') {
+        // Perform localStorage action
+        const wallet = localStorage.getItem("walletAddress")
+
+    }
+
+    const contractABI = require("../Contract.json");
     function handleChange(evt) {
 
         const value = evt.target.value;
@@ -13,6 +22,27 @@ export default function View({ }) {
             [evt.target.name]: value
         });
     }
+    let getContract = () => {
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const signer = provider.getSigner();
+        let contract = new ethers.Contract(
+            String(process.env.CONTRACT_ADDRESS),
+            contractABI,
+            signer
+        );
+        return contract;
+    };
+    const fetchAllRecords = async () => {
+        let count = await getContract().getRecordCount();
+        let allRecords = []
+        for (let i = 0; i < count; i++) {
+            let record = await getContract().getRecord(i);
+            allRecords.push(record)
+        }
+        allRecords.forEach((record) => {
+            console.log(">>>>>>>>", record)
+        })
+    };
     return (
         <>
             <Navbar />
@@ -28,7 +58,7 @@ export default function View({ }) {
                             </label>
 
                             <div className="flex items-center justify-center mt-4">
-                                <button className="btn glass text-white">
+                                <button className="btn glass text-white" onClick={async () => fetchAllRecords()}>
                                     Fetch All Records
                                 </button>
                             </div>

@@ -11,7 +11,7 @@ export default function Home() {
   // smart contract 
 
   const contractABI = require("./Contract.json");
-  const YOUR_CONTRACT_ADDRESS = "0x1BF794Ffe86682ea3A6920bB699ED346c0069a6C";
+  const YOUR_CONTRACT_ADDRESS = "0xef9e38A19F81f499c7A63DA73Ce4a1C4b7b3Dfea";
 
   const connectWalletProvider = async () => {
     try {
@@ -37,6 +37,7 @@ export default function Home() {
 
       // For debugging
       fetchCurrentValue();
+      fetchAllRecords();
       //
     } catch (error) {
       console.log(error);
@@ -61,6 +62,15 @@ export default function Home() {
     // setCount(count_.toString());
   };
 
+  let fetchAllRecords = async () => {
+    let count = await getContract().getRecordCount();
+
+    for (let i = 0; i < count; i++) {
+      let record = await getContract().getRecord(i);
+      console.log(record);
+    }
+
+  };
 
   useEffect(() => {
     connectWalletProvider();

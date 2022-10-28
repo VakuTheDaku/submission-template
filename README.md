@@ -11,9 +11,6 @@ Tell us about your project here
 [2.Neeraj SD](https://github.com/Neeraj-SD)   
 [3.Vinay Arun Kumar](https://github.com/VakuTheDaku)   
 
-## Link to Project
-[Embed the live link of project](live_link)
-
 ## How it Works ?
 * Hospitals can push medical records into the blockchain.
 * Hospitals can also view the patients records through his public key.

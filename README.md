@@ -15,7 +15,9 @@ Tell us about your project here
 [Embed the live link of project](live_link)
 
 ## How it Works ?
-#
+* Hospitals can push medical records into the blockchain.
+* Hospitals can also view the patients records through his public key.
+* User can view all medical records of his from the blockchain.
 [Embed video of project demo](https://www.loom.com/share/e8b220bef9e84e0198c87fa5e854d15d)
 
 ## Technologies used

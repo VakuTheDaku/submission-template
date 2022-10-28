@@ -7,25 +7,28 @@ asdf
 Tell us about your project here
 
 ## Team Members
-[1.Jayalekshmi KS](Jayalekshmiks112)   
-[2.Neeraj SD](Neeraj-SD)   
-[3.Vinay Arun Kumar](VakuTheDaku)   
+[1.Jayalekshmi KS](https://github.com/Jayalekshmiks112)   
+[2.Neeraj SD](https://github.com/Neeraj-SD)   
+[3.Vinay Arun Kumar](https://github.com/VakuTheDaku)   
 
 ## Link to Project
 [Embed the live link of project](live_link)
 
 ## How it Works ?
-Explaining the working of project  
-Embed video of project demo
+#
+[Embed video of project demo](https://www.loom.com/share/e8b220bef9e84e0198c87fa5e854d15d)
 
 ## Technologies used
-List out tech stacks you have used
+Solidity and next js
 
 ## How to configure
-Instructions for setting up project
+git clone
+cd client
+npm i
 
 ## How to Run
-Instructions for running
+npm run dev
 
-## Other Links
-Provide any other links ( for eg. Wireframe , UI )
+## Other Resources
+https://www.canva.com/design/DAFQRLOWppc/3P0BmquFbr6zhnbRQW30kA/view?utm_content=DAFQRLOWppc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+

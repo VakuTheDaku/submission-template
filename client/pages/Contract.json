@@ -2,9 +2,9 @@
 	{
 		"inputs": [
 			{
-				"internalType": "uint256",
+				"internalType": "string",
 				"name": "_user",
-				"type": "uint256"
+				"type": "string"
 			},
 			{
 				"internalType": "string",
@@ -51,9 +51,9 @@
 			},
 			{
 				"indexed": false,
-				"internalType": "uint256",
+				"internalType": "string",
 				"name": "user",
-				"type": "uint256"
+				"type": "string"
 			},
 			{
 				"indexed": false,
@@ -106,9 +106,9 @@
 				"type": "uint256"
 			},
 			{
-				"internalType": "uint256",
+				"internalType": "string",
 				"name": "",
-				"type": "uint256"
+				"type": "string"
 			},
 			{
 				"internalType": "string",
@@ -171,9 +171,9 @@
 				"type": "uint256"
 			},
 			{
-				"internalType": "uint256",
+				"internalType": "string",
 				"name": "user",
-				"type": "uint256"
+				"type": "string"
 			},
 			{
 				"internalType": "string",

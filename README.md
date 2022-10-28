@@ -1,10 +1,9 @@
 ![image](https://user-images.githubusercontent.com/92361680/197824476-464d420d-26a6-4df5-aef3-99214fac1388.png)
 
-asdf
 
 
-# {Project Name} - Make a Ton 5.0
-Tell us about your project here
+# DEMEDIFY - Make a Ton 5.0
+DEMEDIFY - connecting health care with web 3
 
 ## Team Members
 [1.Jayalekshmi KS](https://github.com/Jayalekshmiks112)   

@@ -21,9 +21,9 @@ Tell us about your project here
 Solidity and next js
 
 ## How to configure
-git clone
-cd client
-npm i
+* git clone
+* cd client
+* npm i
 
 ## How to Run
 npm run dev
